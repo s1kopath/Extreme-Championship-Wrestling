@@ -21,7 +21,7 @@ const Team = (props) => {
         <div>
             <h2 style={headStyle}>Total Wrestler added to the team: {team.length}</h2>
             <h1>Selected Wrestlers: {wrestlerName}</h1>
-            <p className="lead display-4">Total Salary: {total}</p>
+            <p className="lead display-4">Total Salary: ${total}</p>
 
         </div>
     );

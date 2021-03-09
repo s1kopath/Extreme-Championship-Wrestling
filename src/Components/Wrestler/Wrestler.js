@@ -19,7 +19,7 @@ const Wrestler = (props) => {
             <div>
                 <h4 className="display-4">{name}</h4>
                 <p><small>Gender: {gender}</small></p>
-                <h5>Salary: {salary}</h5>
+                <h5>Salary: ${salary}</h5>
                 <button className="btn btn-primary" onClick={() => props.handleAddWrestler(props.wrestlers)}><FontAwesomeIcon icon={faUserPlus} />Add To Team</button>
             </div>
         </div>
