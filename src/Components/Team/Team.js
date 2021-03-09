@@ -1,4 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Team = (props) => {
     const team = props.team;
@@ -10,7 +14,7 @@ const Team = (props) => {
         
         const wrestlers = team[i];
         salary = wrestlers.salary;
-        let Name = <li>{' '+wrestlers.name + '.'}</li>;
+        let Name = <li>{' '+wrestlers.name + ' '}<FontAwesomeIcon icon={faCheck} /></li>;
         wrestlerName.push(Name);
         total = total + salary;
         
@@ -20,7 +24,7 @@ const Team = (props) => {
     return (
         <div>
             <h2 style={headStyle}>Total Wrestler added to the team: {team.length}</h2>
-            <h1>Selected Wrestlers: {wrestlerName}</h1>
+            <h1>Selected Wrestlers: {wrestlerName} </h1>
             <p className="lead display-4">Total Salary: ${total}</p>
 
         </div>
